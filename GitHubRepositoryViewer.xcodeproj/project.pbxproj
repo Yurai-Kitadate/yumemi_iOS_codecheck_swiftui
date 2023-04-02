@@ -22,16 +22,14 @@
 		5213A27929D72C7C006B3096 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213A27829D72C7C006B3096 /* RepositoryViewModel.swift */; };
 		5213A27B29D73BAD006B3096 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213A27A29D73BAD006B3096 /* ImageViewModel.swift */; };
 		5213A27E29D80F96006B3096 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213A27D29D80F96006B3096 /* Main.swift */; };
-		5213A28029D84F97006B3096 /* BookmarkRepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213A27F29D84F97006B3096 /* BookmarkRepositoryListView.swift */; };
 		529E44EA29D8CCBA00741926 /* CellsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E44E929D8CCBA00741926 /* CellsCountView.swift */; };
 		529E44EC29D8D1FA00741926 /* LanguageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E44EB29D8D1FA00741926 /* LanguageColor.swift */; };
 		529E44EE29D8D68500741926 /* language.json in Resources */ = {isa = PBXBuildFile; fileRef = 529E44ED29D8D68500741926 /* language.json */; };
 		529E44F129D96D0A00741926 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E44F029D96D0A00741926 /* Modifier.swift */; };
 		529E44F429D9734E00741926 /* GitHubRepositoryViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 529E44F229D9734E00741926 /* GitHubRepositoryViewer.xcdatamodeld */; };
 		52F025C229D9BBE20058726D /* DetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F025C129D9BBE20058726D /* DetailItemView.swift */; };
-		52F025C429D9BF2E0058726D /* DetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F025C329D9BF2E0058726D /* DetailItem.swift */; };
-		52F025C829D9C5570058726D /* ContributorIconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F025C729D9C5570058726D /* ContributorIconListView.swift */; };
 		52F025CC29DA00030058726D /* DetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F025CB29DA00030058726D /* DetailCellView.swift */; };
+		52F025D029DA1FA20058726D /* RepositoryCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F025CF29DA1FA20058726D /* RepositoryCellContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,16 +68,14 @@
 		5213A27829D72C7C006B3096 /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		5213A27A29D73BAD006B3096 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		5213A27D29D80F96006B3096 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
-		5213A27F29D84F97006B3096 /* BookmarkRepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkRepositoryListView.swift; sourceTree = "<group>"; };
 		529E44E929D8CCBA00741926 /* CellsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsCountView.swift; sourceTree = "<group>"; };
 		529E44EB29D8D1FA00741926 /* LanguageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageColor.swift; sourceTree = "<group>"; };
 		529E44ED29D8D68500741926 /* language.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = language.json; sourceTree = "<group>"; };
 		529E44F029D96D0A00741926 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
 		529E44F329D9734E00741926 /* GitHubRepositoryViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubRepositoryViewer.xcdatamodel; sourceTree = "<group>"; };
 		52F025C129D9BBE20058726D /* DetailItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemView.swift; sourceTree = "<group>"; };
-		52F025C329D9BF2E0058726D /* DetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItem.swift; sourceTree = "<group>"; };
-		52F025C729D9C5570058726D /* ContributorIconListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorIconListView.swift; sourceTree = "<group>"; };
 		52F025CB29DA00030058726D /* DetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellView.swift; sourceTree = "<group>"; };
+		52F025CF29DA1FA20058726D /* RepositoryCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCellContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +179,6 @@
 			children = (
 				52F025CB29DA00030058726D /* DetailCellView.swift */,
 				5213A26D29D72810006B3096 /* RepositoryDetailView.swift */,
-				52F025C729D9C5570058726D /* ContributorIconListView.swift */,
 				52F025C129D9BBE20058726D /* DetailItemView.swift */,
 			);
 			path = Detail;
@@ -193,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				5213A27129D72A21006B3096 /* Repository.swift */,
-				52F025C329D9BF2E0058726D /* DetailItem.swift */,
 				529E44EB29D8D1FA00741926 /* LanguageColor.swift */,
 				5213A27329D72A43006B3096 /* SearchType.swift */,
 				529E44ED29D8D68500741926 /* language.json */,
@@ -216,7 +210,7 @@
 				5213A26A29D727A4006B3096 /* RepositoryListCellView.swift */,
 				529E44E929D8CCBA00741926 /* CellsCountView.swift */,
 				5213A26829D72653006B3096 /* RepositoryListView.swift */,
-				5213A27F29D84F97006B3096 /* BookmarkRepositoryListView.swift */,
+				52F025CF29DA1FA20058726D /* RepositoryCellContentView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -363,21 +357,19 @@
 				5213A27E29D80F96006B3096 /* Main.swift in Sources */,
 				5213A27929D72C7C006B3096 /* RepositoryViewModel.swift in Sources */,
 				5213A26929D72653006B3096 /* RepositoryListView.swift in Sources */,
-				52F025C429D9BF2E0058726D /* DetailItem.swift in Sources */,
 				5213A26E29D72810006B3096 /* RepositoryDetailView.swift in Sources */,
 				529E44EC29D8D1FA00741926 /* LanguageColor.swift in Sources */,
 				5213A27B29D73BAD006B3096 /* ImageViewModel.swift in Sources */,
 				529E44F129D96D0A00741926 /* Modifier.swift in Sources */,
-				5213A28029D84F97006B3096 /* BookmarkRepositoryListView.swift in Sources */,
 				52F025CC29DA00030058726D /* DetailCellView.swift in Sources */,
 				529E44F429D9734E00741926 /* GitHubRepositoryViewer.xcdatamodeld in Sources */,
 				52F025C229D9BBE20058726D /* DetailItemView.swift in Sources */,
 				5213A27229D72A21006B3096 /* Repository.swift in Sources */,
 				5213A26B29D727A4006B3096 /* RepositoryListCellView.swift in Sources */,
-				52F025C829D9C5570058726D /* ContributorIconListView.swift in Sources */,
 				5213A27629D72ABA006B3096 /* Util.swift in Sources */,
 				5213A23C29D71D81006B3096 /* GitHubRepositoryViewerApp.swift in Sources */,
 				529E44EA29D8CCBA00741926 /* CellsCountView.swift in Sources */,
+				52F025D029DA1FA20058726D /* RepositoryCellContentView.swift in Sources */,
 				5213A27429D72A43006B3096 /* SearchType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

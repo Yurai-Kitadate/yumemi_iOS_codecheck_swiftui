@@ -14,13 +14,6 @@ struct SearchContextMenuModifier: ViewModifier {
         content
             .contextMenu
         {
-            Button(action: { print("Action 1 triggered") }, label:
-                    {
-                Image(systemName: "bookmark.circle")
-                Text("ブックマーク")
-                    .foregroundColor(.red)
-            })
-            
             Button(action: {
                 UIPasteboard.general.string = "https://github.com/" + (searchWord ?? "")
                 
@@ -34,28 +27,3 @@ struct SearchContextMenuModifier: ViewModifier {
     }
 }
 
-struct BookmarkContextMenuModifier: ViewModifier {
-    var searchWord : String?
-    func body(content: Content) -> some View {
-        content
-            .contextMenu
-        {
-            Button(action: { print("Action 1 triggered") }, label:
-                    {
-                Image(systemName: "trash")
-                Text("削除")
-                    .foregroundColor(.red)
-            })
-            
-            Button(action: {
-                UIPasteboard.general.string = "https://github.com/" + (searchWord ?? "")
-                
-            }, label:
-                    {
-                Image(systemName: "doc.on.doc")
-                Text("リンクをコピー")
-            })
-            
-        }
-    }
-}

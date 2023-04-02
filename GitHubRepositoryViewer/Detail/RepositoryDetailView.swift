@@ -23,9 +23,9 @@ struct RepositoryDetailView: View{
                 Spacer()
             }
             Divider()
-            DetailItemView(itemName: "description",contentView: Text(repository.description ?? "").padding(5))
-            DetailItemView(itemName: "main language",contentView: Text(repository.language ?? "").font(.system(size: 30)).padding(5))
-            DetailItemView(itemName: "contributor", contentView: ContributorIconListView())
+            DetailItemView(itemName: "description",contentView: Text(repository.description ?? "no data").padding(5))
+            DetailItemView(itemName: "main language",contentView: Text(repository.language ?? "no data") .foregroundColor(languageColor).font(.system(size: 30)).bold().padding(5))
+            DetailItemView(itemName: "link",contentView: Link("https://github.com/" + (repository.full_name ?? ""), destination: URL(string: "https://github.com/" + (repository.full_name ?? ""))!).font(.system(size: 20)).padding(5))
         }
         
     }

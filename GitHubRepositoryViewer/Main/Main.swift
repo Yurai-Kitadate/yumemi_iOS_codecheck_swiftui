@@ -18,23 +18,8 @@ struct MainView : View{
     @State private var selection : Int = 0
     var body: some View{
         
-        TabView{
-            RepositoryListView()
-                .tabItem {
-                    Image(systemName: "magnifyingglass.circle")
-                    Text("検索")
-                }
-            
-            
-            
-            BookmarkRepositoryListView()
-                .tabItem {
-                    Image(systemName: "bookmark.circle")
-                    Text("ブックマーク")
-                }
-            
-        }
-        //.tabViewStyle(PageTabViewStyle())
-        .accentColor(.blue)
+        
+        RepositoryListView()
+        
     }
 }

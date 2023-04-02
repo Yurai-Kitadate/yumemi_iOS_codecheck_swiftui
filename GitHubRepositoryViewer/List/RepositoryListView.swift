@@ -51,8 +51,9 @@ struct RepositoryListView :View{
                                 .frame(height:0.5)
                                 .foregroundColor(.gray)
                             
-                            RepositoryListCellView(repository: repositories.items[i]!,languageColor: languageColor.languagesMap[repositories.items[i]!.language ?? "a"]!)
-                            .modifier(SearchContextMenuModifier(searchWord: searchWord))                        }
+                            RepositoryListCellView(repository: repositories.items[i]!,languageColor: languageColor.languagesMap[repositories.items[i]!.language ?? "a"] ?? Color.black)
+                            
+                        }
                     }else if isSearched == false{
                         Text("気になるリポジトリを検索しよう！")
                             .bold()

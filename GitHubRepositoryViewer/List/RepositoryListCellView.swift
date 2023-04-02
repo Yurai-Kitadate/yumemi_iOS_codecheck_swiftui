@@ -25,35 +25,10 @@ struct RepositoryListCellView : View{
                     }
                 }
             
-            
-            HStack{
-                image
-                    .resizable()
-                    .frame(width: 80,height: 80)
-                    .padding(10)
-                VStack(alignment: .leading){
-                    Text("")
-                    Text(repository.name ?? "")
-                        .font(.system(size: 27)).bold()
-                        .ignoresSafeArea()
-                        .foregroundColor(languageColor)
-                    Text(repository.full_name?.split(separator: "/")[0] ?? "unknown owner")
-                        .font(.system(size: 15))
-                        .foregroundColor(.gray)
-                    CellsCountView(repository: repository)
-                    ZStack{
-                        Color(.gray).opacity(0.12).cornerRadius(5)
-                        Text(repository.description ?? "")
-                            .lineLimit(1)
-                    }
-                    
-                    
-                    
-                }
-                Spacer()
-            }
+            RepositoryCellContentView(repository: repository, image: image,languageColor: languageColor)
             
         }
+        .modifier(SearchContextMenuModifier())
         .task{
             await imageViewModel.getImage(from: repository.owner?.avatar_url)
             if let unwrappedImage = imageViewModel.image{
