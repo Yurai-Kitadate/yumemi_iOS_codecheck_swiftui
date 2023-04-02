@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+struct DetailSubContentView : View{
+    var repository : Repository
+    @State var languages : [String:Int] = [:]
+    var body : some View{
+        DetailItemView(itemName: "description",contentView: Text(repository.description ?? "").padding(5))
+        
+        DetailItemView(itemName: "language",contentView:LanguageListView(input: languages))
+    }
+}
+

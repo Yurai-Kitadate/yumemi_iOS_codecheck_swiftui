@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+enum SearchType{
+    case repositories
+    case image
+    case languages
+}

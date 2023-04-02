@@ -6,3 +6,9 @@
 //
 
 import Foundation
+enum DetailItem{
+    case contributors
+    case description
+    case language
+    
+}

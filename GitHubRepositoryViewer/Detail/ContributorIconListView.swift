@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
+struct ContributorIconListView : View{
+    @State 
+    var maxAmount = 20
+    var body : some View{
+        HStack{
+            Text("a")
+        }.task{
+            
+        }
+    }
+}
